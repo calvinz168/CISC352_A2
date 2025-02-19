@@ -16,36 +16,37 @@
 
     ; Locations connected by corridors (bidirectional)
     (connected loc-3-1 loc-3-2 c3132)
-    (connected loc-3-2 loc-3-1 c3132)  ; Reverse connection
+    (connected loc-3-2 loc-3-1 c3132)
 
     (connected loc-1-2 loc-2-2 c1222)
-    (connected loc-2-2 loc-1-2 c1222)  ; Reverse connection
+    (connected loc-2-2 loc-1-2 c1222)
+
     (connected loc-2-2 loc-3-2 c2232)
-    (connected loc-3-2 loc-2-2 c2232)  ; Reverse connection
+    (connected loc-3-2 loc-2-2 c2232)
 
     (connected loc-3-2 loc-4-2 c3242)
-    (connected loc-4-2 loc-3-2 c3242)  ; Reverse connection
+    (connected loc-4-2 loc-3-2 c3242)
 
     (connected loc-2-2 loc-2-3 c2223)
-    (connected loc-2-3 loc-2-2 c2223)  ; Reverse connection
+    (connected loc-2-3 loc-2-2 c2223)
 
     (connected loc-3-2 loc-3-3 c3233)
-    (connected loc-3-3 loc-3-2 c3233)  ; Reverse connection
+    (connected loc-3-3 loc-3-2 c3233)
 
     (connected loc-2-3 loc-3-3 c2333)
-    (connected loc-3-3 loc-2-3 c2333)  ; Reverse connection
+    (connected loc-3-3 loc-2-3 c2333)
 
     (connected loc-2-3 loc-2-4 c2324)
-    (connected loc-2-4 loc-2-3 c2324)  ; Reverse connection
+    (connected loc-2-4 loc-2-3 c2324)
 
     (connected loc-3-3 loc-3-4 c3334)
-    (connected loc-3-4 loc-3-3 c3334)  ; Reverse connection
+    (connected loc-3-4 loc-3-3 c3334)
 
     (connected loc-2-4 loc-3-4 c2434)
-    (connected loc-3-4 loc-2-4 c2434)  ; Reverse connection
+    (connected loc-3-4 loc-2-4 c2434)
 
     (connected loc-3-4 loc-4-4 c3444)
-    (connected loc-4-4 loc-3-4 c3444)  ; Reverse connection
+    (connected loc-4-4 loc-3-4 c3444)
 
     ; Key locations
     (key-at key1 loc-2-2)
@@ -76,7 +77,7 @@
     (one-use key3)
     (one-use key4)
 
-    ; Not holding anything
+    ; Hero starts not holding anything
     (arm-free)
   )
 

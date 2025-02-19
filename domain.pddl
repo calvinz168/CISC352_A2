@@ -19,7 +19,7 @@
         (corridor-unlocked ?cor - corridor)
         (corridor-risky ?cor - corridor)
         (corridor-collapsed ?cor - corridor)
-        (corridor-locked ?cor - corridor ?col - colour)  ; Correctly using corridor-locked
+        (corridor-locked ?cor - corridor ?col - colour)
         (key-at ?k - key ?loc - location)
         (hero-holding ?k - key)
         (key-color ?k - key ?col - colour)
@@ -44,7 +44,7 @@
         :precondition (and
             (hero-at ?from)
             (connected ?from ?to ?cor)
-            (not (exists (?col - colour) (corridor-locked ?cor ?col))) ; Corrected: using corridor-locked
+            (not (exists (?col - colour) (corridor-locked ?cor ?col)))
             (not (corridor-collapsed ?cor))
         )
         :effect (and
@@ -76,7 +76,7 @@
             (not (key-at ?k ?loc))
             (hero-holding ?k)
             (not (arm-free))
-            ;; Preserve key usage properties
+
             (when (one-use ?k) (one-use ?k))
             (when (two-uses ?k) (two-uses ?k))
             (when (multi-use ?k) (multi-use ?k))
@@ -115,13 +115,13 @@
             (hero-holding ?k)
             (key-color ?k ?col)
             (corridor-locked ?cor ?col)
-            (exists (?other-loc - location) (connected ?loc ?other-loc ?cor))  ;; Ensure ?loc connects to a valid location
+            (exists (?other-loc - location) (connected ?loc ?other-loc ?cor))
             (or (one-use ?k) (two-uses ?k) (multi-use ?k))
         )
         :effect (and
             (not (corridor-locked ?cor ?col))
             (corridor-unlocked ?cor)
-            ;; Handle different key use cases
+
             (when (two-uses ?k) (and (not (two-uses ?k)) (one-use ?k)))
             (when (one-use ?k) (and (not (one-use ?k)) (used-up ?k)))
         )
