@@ -57,9 +57,12 @@
     (key-colour key rainbow)
 
     ; Key usage properties (one use, two use, etc)
-    (key-uses key1 1)
-    (key-uses key2 1)
-    (key-uses key4 2)  ; Example of a 2-use key
+    (one-use key1)
+    (two-uses key4)
+    (one-use key2)
+    
+    ; Hero starts not holding anything
+    (arm-free)
 
   )
   (:goal
