@@ -17,10 +17,19 @@
 
     ; Locations <> Corridor Connections
     (connected loc-2-1 loc-2-2 c2122)
+    (connected loc-2-2 loc-2-1 c2122)
+
     (connected loc-1-2 loc-2-2 c1222)
+    (connected loc-2-2 loc-1-2 c1222)
+
     (connected loc-2-2 loc-3-2 c2232)
+    (connected loc-3-2 loc-2-2 c2232)
+
     (connected loc-3-2 loc-4-2 c3242)
+    (connected loc-4-2 loc-3-2 c3242)
+
     (connected loc-2-2 loc-2-3 c2223)
+    (connected loc-2-3 loc-2-2 c2223)
 
     ; Key locations
 
@@ -42,15 +51,15 @@
 
     ; Key colours
 
-    (key-colour key1 red)
-    (key-colour key2 yellow)
-    (key-colour key3 green)
-    (key-colour key4 purple)
+    (key-colour key1 green)
+    (key-colour key2 purple)
+    (key-colour key4 yellow)
     (key-colour key treasure)
 
     ; Key usage properties (one use, two use, etc)
-
-    (key-uses key2 2)  ; Example of a 2-use key
+    (key-uses key1 1)
+    (key-uses key2 1)
+    (key-uses key4 2)  ; Example of a 2-use key
 
   )
   (:goal
