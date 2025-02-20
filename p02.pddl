@@ -44,7 +44,7 @@
     (locked c2212 yellow)
     (locked c2223 green)
     (locked c2232 yellow)
-    (locked c3242 treasure)
+    (locked c3242 rainbow)
 
     ; Risky corridors
 
@@ -54,7 +54,7 @@
     (key-colour key1 green)
     (key-colour key2 purple)
     (key-colour key4 yellow)
-    (key-colour key treasure)
+    (key-colour key rainbow)
 
     ; Key usage properties (one use, two use, etc)
     (key-uses key1 1)
