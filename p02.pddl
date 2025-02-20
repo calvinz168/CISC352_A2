@@ -13,23 +13,50 @@
   (:init
 
     ; Hero location and carrying status
+    (hero-at loc-2-2)
 
-    ; Locationg <> Corridor Connections
+    ; Locations <> Corridor Connections
+    (connected loc-2-1 loc-2-2 c2122)
+    (connected loc-1-2 loc-2-2 c1222)
+    (connected loc-2-2 loc-3-2 c2232)
+    (connected loc-3-2 loc-4-2 c3242)
+    (connected loc-2-2 loc-2-3 c2223)
 
     ; Key locations
 
+    (key-at key1 loc-2-1)
+    (key-at key2 loc-1-2)
+    (key-at key3 loc-2-2)
+    (key-at key4 loc-2-3)
+
     ; Locked corridors
+
+    (locked c2221 purple)
+    (locked c2212 yellow)
+    (locked c2223 green)
+    (locked c2232 yellow)
+    (locked c3242 treasure)
 
     ; Risky corridors
 
+
     ; Key colours
 
+    (key-colour key1 red)
+    (key-colour key2 yellow)
+    (key-colour key3 green)
+    (key-colour key4 purple)
+    (key-colour key treasure)
+
     ; Key usage properties (one use, two use, etc)
+
+    (key-uses key2 2)  ; Example of a 2-use key
 
   )
   (:goal
     (and
       ; Hero's final location goes here
+      (hero-at loc-4-2) 
     )
   )
 
