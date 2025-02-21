@@ -52,14 +52,16 @@
     ; Key colours
 
     (key-colour key1 green)
-    (key-colour key2 purple)
+    (key-colour key3 purple)
     (key-colour key4 yellow)
-    (key-colour key rainbow)
+    (key-colour key2 rainbow)
 
     ; Key usage properties (one use, two use, etc)
     (one-use key1)
-    (two-uses key4)
     (one-use key2)
+    (one-use key3)
+    (two-uses key4)
+
     
     ; Hero starts not holding anything
     (arm-free)
