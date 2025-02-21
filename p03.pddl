@@ -6,7 +6,7 @@
   ; - c{i}{j}{h}{k} refers to the corridor connecting loc-{i}-{j} and loc-{h}-{k}
   (:objects
     loc-3-4 loc-4-5 loc-1-2 loc-2-2 loc-3-2 loc-3-3 loc-2-5 loc-1-3 loc-2-1 loc-1-4 loc-3-5 loc-2-4 loc-4-4 loc-2-3 loc-4-3 - location
-    c2122 c1222 c2232 c1213 c1223 c2223 c3223 c3233 c1323 c2333 c1314 c1423 c2324 c2334 c3334 c1424 c2434 c2425 c2535 c3545 c4544 c4443 - corridor
+    c2122 c1222 c2232 c1213 c1223 c2223 c3223 c3233 c1323 c2333 c1314 c2314 c2324 c2334 c3334 c1424 c2434 c2425 c2535 c3545 c4544 c4443 - corridor
     key1 key2 key3 key4 key5 key6 - key
   )
 
@@ -34,9 +34,9 @@
     (connected loc-1-3 loc-2-3 c1323)  
     (connected loc-2-3 loc-1-3 c1323)  
 
-    (connected loc-1-4 loc-2-3 c1423)  
-    (connected loc-2-3 loc-1-4 c1423)  
-
+    (connected loc-1-4 loc-2-3 c2314)  
+    (connected loc-2-3 loc-1-4 c2314)  
+    
     (connected loc-2-1 loc-2-2 c2122)  
     (connected loc-2-2 loc-2-1 c2122)  
 
@@ -98,7 +98,7 @@
     (corridor-locked c2223 red)
     (corridor-locked c1223 red)
     (corridor-locked c1323 red)
-    (corridor-locked c1423 red)
+    (corridor-locked c2314 red)
     (corridor-locked c2324 red)
     (corridor-locked c2334 red)
     (corridor-locked c2333 red)
@@ -114,7 +114,7 @@
     (corridor-risky c2223)
     (corridor-risky c1223)
     (corridor-risky c1323)
-    (corridor-risky c1423)
+    (corridor-risky c2314)
     (corridor-risky c2324)
     (corridor-risky c2334)
     (corridor-risky c2333)
