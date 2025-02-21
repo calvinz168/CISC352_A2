@@ -52,9 +52,9 @@
     ; Key colours
 
     (key-colour key1 green)
+    (key-colour key2 rainbow)
     (key-colour key3 purple)
     (key-colour key4 yellow)
-    (key-colour key2 rainbow)
 
     ; Key usage properties (one use, two use, etc)
     (one-use key1)
