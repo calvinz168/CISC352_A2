@@ -40,21 +40,21 @@
 
     ; Locked corridors
 
-    (locked c2221 purple)
-    (locked c2212 yellow)
-    (locked c2223 green)
-    (locked c2232 yellow)
-    (locked c3242 rainbow)
+    (corridor-locked c2122 purple)
+    (corridor-locked c1222 yellow)
+    (corridor-locked c2223 green)
+    (corridor-locked c2232 yellow)
+    (corridor-locked c3242 rainbow)
 
     ; Risky corridors
 
 
     ; Key colours
 
-    (key-colour key1 green)
-    (key-colour key2 rainbow)
-    (key-colour key3 purple)
-    (key-colour key4 yellow)
+    (key-color key1 green)
+    (key-color key2 rainbow)
+    (key-color key3 purple)
+    (key-color key4 yellow)
 
     ; Key usage properties (one use, two use, etc)
     (one-use key1)
